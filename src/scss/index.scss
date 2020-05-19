@@ -1,0 +1,481 @@
+//Bootstrap overrides
+$theme-colors: (
+  "primary": #ff7f7f,
+  "secondary": black,
+);
+
+//variables
+$primary: #ff7f7f;
+
+//MOBILE
+@media (min-width: 320px) {
+  nav {
+    a {
+      svg {
+        width: 10em;
+      }
+    }
+  }
+  .hero {
+    background-image: url(../img/hero-mobile2.jpg);
+    background-size: cover;
+    height: 70vh;
+    background-position: 10% 0%;
+
+    h1 {
+      color: white;
+      padding-top: 15%;
+      margin-left: 5%;
+    }
+
+    .btn {
+      color: white;
+      margin-top: 10%;
+      margin-left: 5%;
+      border-radius: 30px;
+    }
+  }
+
+  .pink-wave {
+    // margin-top: -33%;
+    // height: 17vh;
+    margin-top: -25%;
+    width: 100%;
+  }
+
+  .featured {
+    text-align: center;
+    background-color: $primary;
+    margin-top: -2% !important;
+    h2 {
+      color: white;
+    }
+
+    .row {
+      display: inline-block;
+      .col-sm-12 {
+        margin: 2em 0;
+      }
+    }
+  }
+
+  .headline {
+    text-align: center;
+    padding: 15% 2%;
+    background-color: white;
+    .row {
+      width: 100vw;
+    }
+    .image {
+      background-image: url(../img/headline.jpg);
+      background-size: cover;
+      height: 250px;
+      width: 250px;
+      border-radius: 100%;
+      margin: 0 auto;
+    }
+    .btn {
+      color: white;
+      border-radius: 30px;
+    }
+    .headline-text {
+      h2 {
+        margin-top: 15%;
+      }
+    }
+  }
+
+  .carousel {
+    width: 100vw;
+    background-color: white;
+    .carousel-item {
+      height: 35vh;
+      .img1 {
+        background-image: url(../img/carousel1.jpg);
+        height: 35vh;
+        background-size: cover;
+      }
+      .img2 {
+        background-image: url(../img/carousel2.jpg);
+        height: 35vh;
+        background-size: cover;
+        background-position: 0% 55%;
+      }
+      .img3 {
+        background-image: url(../img/carousel3.jpg);
+        height: 35vh;
+        background-size: cover;
+      }
+    }
+  }
+
+  .subs {
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    background-color: $primary;
+    color: white;
+
+    p {
+      margin-top: 10%;
+    }
+
+    .input {
+      margin-top: 13%;
+
+      // .button {
+      //   transition: 0.5s;
+      // }
+
+      // .button:hover {
+      //   color: white;
+      //   background-color: black;
+      // }
+    }
+  }
+
+  .black-wave {
+    background-color: $primary;
+    margin-bottom: -10%;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    padding-left: 2%;
+    .footer-logo svg {
+      width: 17rem;
+      margin: 5% 0;
+    }
+    .row {
+      padding-top: 10%;
+      ul {
+        padding: 0;
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+}
+
+//TABLET
+@media (min-width: 768px) {
+  nav {
+    a {
+      svg {
+        width: 13em;
+      }
+    }
+  }
+  .hero {
+    background-image: url(../img/hero-mobile2.jpg);
+    background-size: cover;
+    height: 70vh;
+    background-position: 10% 0%;
+
+    h1 {
+      color: white;
+      padding-top: 15%;
+      margin-left: 5%;
+      font-weight: bold;
+    }
+
+    .btn {
+      color: white;
+      margin-top: 10%;
+      margin-left: 5%;
+      border-radius: 30px;
+    }
+  }
+
+  .pink-wave {
+    margin-top: -22%;
+    height: 20vh;
+  }
+
+  .featured {
+    text-align: center;
+    background-color: $primary;
+    margin-top: -2% !important;
+    h2 {
+      color: white;
+    }
+
+    .row {
+      display: inline-block;
+
+      .col-sm-12 {
+        margin: 2em 0;
+      }
+    }
+  }
+
+  .headline {
+    text-align: center;
+    padding: 15% 5%;
+    background-color: white;
+    margin: 0;
+    .row {
+      width: 90vw;
+    }
+    .image {
+      background-image: url(../img/headline.jpg);
+      background-size: cover;
+      height: 300px;
+      max-width: 300px;
+      border-radius: 100%;
+      margin: 0 auto;
+    }
+    .btn {
+      color: white;
+      border-radius: 30px;
+    }
+    .headline-text {
+      width: 90vw;
+      h2 {
+        margin-top: 5%;
+      }
+    }
+  }
+
+  .carousel {
+    width: 100vw;
+    background-color: white;
+    .carousel-item {
+      height: 43vh;
+      .img1 {
+        background-image: url(../img/carousel1.jpg);
+        height: 43vh;
+        background-size: cover;
+      }
+      .img2 {
+        background-image: url(../img/carousel2.jpg);
+        height: 43vh;
+        background-size: cover;
+        background-position: 0% 55%;
+      }
+      .img3 {
+        background-image: url(../img/carousel3.jpg);
+        height: 43vh;
+        background-size: cover;
+      }
+    }
+  }
+
+  .subs {
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    background-color: $primary;
+    color: white;
+
+    p {
+      margin-top: 5%;
+    }
+
+    .input {
+      margin-top: 5%;
+
+      // .button {
+      //   transition: 0.5s;
+      // }
+
+      // .button:hover {
+      //   color: white;
+      //   background-color: black;
+      // }
+    }
+  }
+
+  .black-wave {
+    background-color: $primary;
+    margin-bottom: -10%;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    padding: 2% 5%;
+
+    .footer-logo svg {
+      width: 15rem;
+    }
+
+    .row {
+      padding-top: 10%;
+
+      .footer-logo svg {
+        margin-bottom: 10px;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+}
+
+//DESKTOP
+@media (min-width: 992px) {
+  nav {
+    a {
+      svg {
+        width: 15em;
+        padding-left: 10%;
+      }
+    }
+  }
+  .hero {
+    background-image: url(../img/hero-mobile2.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 0% 60%;
+
+    h1 {
+      color: white;
+      padding-top: 15%;
+      margin-left: 5%;
+      font-weight: bold;
+    }
+
+    .btn {
+      color: white;
+      margin-top: 10%;
+      margin-left: 5%;
+      border-radius: 30px;
+    }
+  }
+
+  .pink-wave {
+    margin-top: -17%;
+    height: 40vh;
+  }
+
+  .featured {
+    // text-align: center;
+    background-color: $primary;
+    h2 {
+      color: white;
+    }
+
+    .row {
+      display: inline-block;
+
+      .col-sm-12 {
+        margin: 2em 0;
+      }
+    }
+  }
+
+  .headline {
+    text-align: center;
+    padding: 10% 5%;
+    background-color: white;
+    margin: 0;
+    .image {
+      background-image: url(../img/headline.jpg);
+      background-size: cover;
+      height: 300px;
+      max-width: 300px;
+      border-radius: 100%;
+      margin: 0 auto;
+    }
+    .btn {
+      color: white;
+      border-radius: 30px;
+      margin-top: 3%;
+    }
+    .headline-text {
+      h2 {
+        margin-top: 5%;
+        margin-bottom: 3%;
+      }
+    }
+  }
+
+  .carousel {
+    width: 100%;
+    background-color: white;
+    .carousel-item {
+      height: 95vh;
+      .img1 {
+        background-image: url(../img/carousel1.jpg);
+        height: 95vh;
+        background-size: cover;
+        background-position: 0% 45%;
+      }
+      .img2 {
+        background-image: url(../img/carousel2.jpg);
+        height: 95vh;
+        background-size: cover;
+        background-position: 0% 55%;
+      }
+      .img3 {
+        background-image: url(../img/carousel3.jpg);
+        height: 95vh;
+        background-size: cover;
+        background-position: 0% 55%;
+      }
+    }
+  }
+
+  .subs {
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    background-color: $primary;
+    color: white;
+
+    p {
+      margin-top: 5%;
+    }
+
+    .input {
+      margin-top: 5%;
+
+      // .button {
+      //   transition: 0.5s;
+      // }
+
+      // .button:hover {
+      //   color: white;
+      //   background-color: black;
+      // }
+    }
+  }
+
+  .black-wave {
+    background-color: $primary;
+    margin-bottom: -10%;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    padding: 2% 5%;
+
+    .row {
+      padding-top: 10%;
+      .footer-logo svg {
+        margin-bottom: 10px;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+}
+
+//import bootstrap scss
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background-color: $primary;
+  font-family: "Montserrat", sans-serif;
+}
