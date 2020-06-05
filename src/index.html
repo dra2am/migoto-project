@@ -6,7 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="scss/index.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -91,13 +95,13 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#">Menu</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
@@ -106,7 +110,7 @@
 
     <!-- Jumbotron -->
     <div class="hero">
-      <div class="container">
+      <div class="hero-container">
         <h1 class="display-4">Hello, world!</h1>
         <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
       </div>
@@ -148,40 +152,49 @@
 
     <!-- Featured -->
     <div class="featured">
-      <h2>Featured</h2>
-      <!-- card 1 -->
+      <h1>Featured Bowls</h1>
       <div class="row">
-        <div class="col-sm-12 col-lg-4">
+        <!-- card1 -->
+        <div class="col-sm-12 col-lg-3">
+          <div class="dish dish1"></div>
           <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <div class="card-title">
+                <h3>Classic Ramen Bowl</h3>
+              </div>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae praesentium et optio!
               </p>
             </div>
           </div>
         </div>
-        <!-- card 2 -->
-        <div class="col-sm-12 col-lg-4">
+        <!-- card2 -->
+        <div class="col-sm-12 col-lg-3">
+          <div class="dish dish2"></div>
           <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <div class="card-title">
+                <h3>Seafood Veggie Bowl</h3>
+              </div>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                sit laboriosam minima.
               </p>
             </div>
           </div>
         </div>
-        <!-- card 3 -->
-        <div class="col-sm-12 col-lg-4">
+        <!-- card3 -->
+        <div class="col-sm-12 col-lg-3">
+          <div class="dish dish3"></div>
           <div class="card" style="width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <div class="card-title">
+                <h3>Chicken Noodle Bowl</h3>
+              </div>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit ad voluptatibus tempora?
               </p>
             </div>
           </div>
@@ -193,11 +206,12 @@
       <div class="row">
         <div class="image col-sm-12 col-lg-6"></div>
         <div class="headline-text col-sm-12 col-lg-6 text-primary">
-          <h2>Headline</h2>
+          <h1>Headline</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             alias, iusto a est mollitia aliquid labore ipsam! Animi, inventore
-            dolor!
+            dolor! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Itaque, omnis. Lorem ipsum dolor sit amet.
           </p>
           <div class="btn btn-lg btn-primary">See Our Menu</div>
         </div>
@@ -241,7 +255,7 @@
     </div>
     <!-- Subscribe -->
     <div class="subs container">
-      <h2>Subscribe</h2>
+      <h1>Subscribe</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus nulla
         labore consequatur delectus dolor perspiciatis cupiditate minima
@@ -249,15 +263,15 @@
       </p>
       <div class="input input-group">
         <input
-          type="text"
+          type="email"
           class="form-control"
-          placeholder="Recipient's username"
+          placeholder="Enter your email"
           aria-label="Recipient's username"
           aria-describedby="button-addon2"
         />
         <div class="input-group-append">
           <button class="btn btn-secondary" type="button" id="button-addon2">
-            Button
+            Submit
           </button>
         </div>
       </div>
@@ -278,7 +292,7 @@
 
     <footer>
       <div class="row container">
-        <div class="col-sm-12 col-md-3">
+        <div class="col-sm-12 col-lg-3">
           <a class="footer-logo">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 688.8 70.33">
               <defs>

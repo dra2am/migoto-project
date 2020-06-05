@@ -39,7 +39,7 @@ $primary: #ff7f7f;
   .pink-wave {
     // margin-top: -33%;
     // height: 17vh;
-    margin-top: -25%;
+    margin-top: -70px;
     width: 100%;
   }
 
@@ -47,14 +47,49 @@ $primary: #ff7f7f;
     text-align: center;
     background-color: $primary;
     margin-top: -2% !important;
-    h2 {
+    h1 {
       color: white;
+      font-weight: bold;
     }
 
     .row {
       display: inline-block;
       .col-sm-12 {
         margin: 2em 0;
+        .card {
+          background-color: $primary;
+          color: white;
+          border: none;
+          font-weight: lighter;
+          .card-body {
+            width: 18rem;
+            padding: 0;
+            .card-title {
+              h3 {
+                font-weight: 700;
+                margin-bottom: -3px;
+              }
+            }
+          }
+        }
+        .dish {
+          height: 18em; //18
+          border-radius: 100%;
+          background-size: cover;
+          margin-bottom: 2rem;
+        }
+        .dish1 {
+          background-image: url(../img/dish1.jpg);
+          background-position: 35% 0%;
+        }
+        .dish2 {
+          background-image: url(../img/dish2.jpg);
+          background-position: 55% 0;
+        }
+        .dish3 {
+          background-image: url(../img/dish3.jpg);
+          background-position: 45% 0;
+        }
       }
     }
   }
@@ -65,6 +100,13 @@ $primary: #ff7f7f;
     background-color: white;
     .row {
       width: 100vw;
+      h1 {
+        font-weight: bold;
+        margin-top: 10%;
+      }
+      p {
+        margin-left: 5%;
+      }
     }
     .image {
       background-image: url(../img/headline.jpg);
@@ -116,6 +158,9 @@ $primary: #ff7f7f;
     background-color: $primary;
     color: white;
 
+    h1 {
+      font-weight: bold;
+    }
     p {
       margin-top: 10%;
     }
@@ -123,14 +168,15 @@ $primary: #ff7f7f;
     .input {
       margin-top: 13%;
 
-      // .button {
-      //   transition: 0.5s;
-      // }
+      .btn {
+        transition: 0.5s;
+        border: none;
+      }
 
-      // .button:hover {
-      //   color: white;
-      //   background-color: black;
-      // }
+      .btn:hover {
+        color: white;
+        background-color: #444;
+      }
     }
   }
 
@@ -190,23 +236,57 @@ $primary: #ff7f7f;
   }
 
   .pink-wave {
-    margin-top: -22%;
-    height: 20vh;
+    margin-top: -130px;
+    // height: 20vh;
   }
 
   .featured {
     text-align: center;
     background-color: $primary;
     margin-top: -2% !important;
-    h2 {
+    h1 {
       color: white;
+      font-weight: bold;
     }
 
     .row {
-      display: inline-block;
-
       .col-sm-12 {
         margin: 2em 0;
+        .card {
+          background-color: $primary;
+          color: white;
+          border: none;
+          font-weight: lighter;
+
+          .card-body {
+            width: 18rem;
+            padding: 0;
+            .card-title {
+              h3 {
+                font-weight: 700;
+                margin-bottom: -3px;
+              }
+            }
+          }
+        }
+        .dish {
+          height: 18em; //18
+          border-radius: 100%;
+          background-size: cover;
+          margin-bottom: 2rem;
+        }
+        .dish1 {
+          background-image: url(../img/dish1.jpg);
+          background-position: 35% 0%;
+        }
+        .dish2 {
+          background-image: url(../img/dish2.jpg);
+          background-position: 55% 0;
+        }
+        .dish3 {
+          background-image: url(../img/dish3.jpg);
+          background-position: 45% 0;
+        }
       }
     }
   }
@@ -216,6 +296,10 @@ $primary: #ff7f7f;
     padding: 15% 5%;
     background-color: white;
     margin: 0;
+    h1 {
+      font-weight: bold;
+      margin-top: 5%;
+    }
     .row {
       width: 90vw;
     }
@@ -270,21 +354,26 @@ $primary: #ff7f7f;
     background-color: $primary;
     color: white;
 
+    h1 {
+      font-weight: bold;
+    }
+
     p {
-      margin-top: 5%;
+      margin-top: 2%;
     }
 
     .input {
       margin-top: 5%;
 
-      // .button {
-      //   transition: 0.5s;
-      // }
+      .btn {
+        transition: 0.5s;
+        border: none;
+      }
 
-      // .button:hover {
-      //   color: white;
-      //   background-color: black;
-      // }
+      .btn:hover {
+        color: white;
+        background-color: #444;
+      }
     }
   }
 
@@ -297,6 +386,8 @@ $primary: #ff7f7f;
     background-color: black;
     color: white;
     padding: 2% 5%;
+    display: flex;
+    text-align: center;
 
     .footer-logo svg {
       width: 15rem;
@@ -304,6 +395,7 @@ $primary: #ff7f7f;
 
     .row {
       padding-top: 10%;
+      justify-content: center;
 
       .footer-logo svg {
         margin-bottom: 10px;
@@ -327,45 +419,94 @@ $primary: #ff7f7f;
         padding-left: 10%;
       }
     }
+    ul {
+      li {
+        a.nav-link {
+          margin-right: 1.5em;
+        }
+      }
+    }
   }
+
   .hero {
     background-image: url(../img/hero-mobile2.jpg);
     background-size: cover;
     height: 100vh;
-    background-position: 0% 60%;
+    background-position: 0% 80%;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 
-    h1 {
-      color: white;
-      padding-top: 15%;
-      margin-left: 5%;
-      font-weight: bold;
-    }
+    .hero-container {
+      padding-top: 2%;
+      margin-left: 2%;
+      h1 {
+        color: white;
+        margin-left: 5%;
+        font-weight: bold;
+      }
 
-    .btn {
-      color: white;
-      margin-top: 10%;
-      margin-left: 5%;
-      border-radius: 30px;
+      .btn {
+        color: white;
+        margin-top: 2%;
+        margin-left: 5%;
+        border-radius: 30px;
+      }
     }
   }
 
   .pink-wave {
-    margin-top: -17%;
-    height: 40vh;
+    // margin-top: -17%;
+    margin-top: -250px;
+    // height: 40vh;
   }
 
   .featured {
-    // text-align: center;
     background-color: $primary;
-    h2 {
+    padding-bottom: 5%;
+    h1 {
       color: white;
+      font-weight: bold;
+      margin-bottom: 5%;
+      font-size: 3.5rem;
     }
 
     .row {
-      display: inline-block;
-
+      display: inline-flex;
       .col-sm-12 {
-        margin: 2em 0;
+        margin: 0 auto;
+        .card {
+          background-color: $primary;
+          color: white;
+          border: none;
+          font-weight: lighter;
+          .card-body {
+            width: 14rem;
+            padding: 0;
+            .card-title {
+              h3 {
+                font-weight: 700;
+                margin-bottom: -3px;
+              }
+            }
+          }
+        }
+        .dish {
+          height: 14em;
+          border-radius: 100%;
+          background-size: cover;
+          margin-bottom: 2rem;
+        }
+        .dish1 {
+          background-image: url(../img/dish1.jpg);
+          background-position: 35% 0%;
+        }
+        .dish2 {
+          background-image: url(../img/dish2.jpg);
+          background-position: 55% 0;
+        }
+        .dish3 {
+          background-image: url(../img/dish3.jpg);
+          background-position: 45% 0;
+        }
       }
     }
   }
@@ -375,6 +516,10 @@ $primary: #ff7f7f;
     padding: 10% 5%;
     background-color: white;
     margin: 0;
+    h1 {
+      font-weight: bold;
+    }
+
     .image {
       background-image: url(../img/headline.jpg);
       background-size: cover;
@@ -424,26 +569,33 @@ $primary: #ff7f7f;
 
   .subs {
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     padding-top: 10%;
     background-color: $primary;
     color: white;
 
+    h1 {
+      font-weight: bold;
+    }
+
     p {
-      margin-top: 5%;
+      margin-top: 2%;
     }
 
     .input {
-      margin-top: 5%;
+      margin: 0 auto;
+      padding-top: 2%;
+      width: 50%;
 
-      // .button {
-      //   transition: 0.5s;
-      // }
+      .btn {
+        transition: 0.5s;
+        border: none;
+      }
 
-      // .button:hover {
-      //   color: white;
-      //   background-color: black;
-      // }
+      .btn:hover {
+        color: white;
+        background-color: #444;
+      }
     }
   }
 
@@ -478,4 +630,8 @@ $primary: #ff7f7f;
 body {
   background-color: $primary;
   font-family: "Montserrat", sans-serif;
+
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
 }
